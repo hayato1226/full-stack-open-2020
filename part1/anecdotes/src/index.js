@@ -29,6 +29,8 @@ const App = props => {
       <Button onClick={handlerVote} text="vote" />
       <h1>Anecdote with most votes</h1>
       {props.anecdotes[points.indexOf(Math.max.apply(null, points))]}
+      <br />
+      has {Math.max.apply(null, points)} votes.
     </div>
   );
 };
